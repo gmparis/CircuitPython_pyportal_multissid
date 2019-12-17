@@ -38,16 +38,19 @@ class where you would have used the PyPortal class. For example::
     from pyportal_multissid import PyPortal_MultiSSID
     pyportal = PyPortal_MultiSSID(status_neopixel=board.NEOPIXEL)
 
-Configure your "home" SSID as 'ssid' and 'password' as usual in your
-*secrets.py* file,
-then add any additional networks (such as phone hotspot, "MiFi" devices,
-or networks at other places you frequent) as described below.
+Configure your "home" network as 'ssid' and 'password'
+as usual in your *secrets.py* file,
+then add any additional networks (such as phone hotspot, *MiFi* devices,
+and networks at places the PyPortal will visit) as described below.
 The PyPortal then becomes portable.
 
-The alteration of your secrets.py file is to include one extra key/value pair.
-The key is 'hotspots' and the value is a list of pairs of ssid and password strings::
+The alteration of *secrets.py* is to include one extra key/value pair.
+The key is 'hotspots' and the value is a list of
+pairs of ssid and password strings::
 
     secrets = {
+        # Whatever is already in your secrets dict remains.
+        # Be sure to add a now-needed comma if there isn't one.
         'hotspots': [
             ['myphonessid', 'thepassword'],
             ['mymifissid', 'itspassword'],
