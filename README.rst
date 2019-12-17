@@ -9,7 +9,8 @@ Introduction
     :target: https://discord.gg/nBQh6qu
     :alt: Discord
 
-.. image:: https://travis-ci.com/gmparis/CircuitPython_pyportal_multissid.svg?branch=master
+.. Unfortunately, Travis build fails because adafruit_pyportal is not in PyPi.
+.. .. image:: https://travis-ci.com/gmparis/CircuitPython_pyportal_multissid.svg?branch=master
     :target: https://travis-ci.com/gmparis/CircuitPython_pyportal_multissid
     :alt: Build Status
 
