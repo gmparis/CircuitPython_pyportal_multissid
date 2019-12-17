@@ -1,2 +1,2 @@
 Adafruit-Blinka
-Adafruit-CircuitPython-PyPortal
+adafruit-circuitpython-pyportal
