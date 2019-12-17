@@ -1,0 +1,10 @@
+$ pylint adafruit_pyportal.py
+No config file found, using default configuration
+************* Module adafruit_pyportal.py
+F:  1, 0: No module named adafruit_pyportal.py (fatal)
+The command "pylint adafruit_pyportal.py" exited with 1.
+0.53s$ ([[ ! -d "examples" ]] || pylint --disable=missing-docstring,invalid-name,bad-whitespace examples/*.py)
+No config file found, using default configuration
+************* Module pyportal_multissid_simpletest
+C: 29, 0: Trailing newlines (trailing-newlines)
+E: 18, 0: Unable to import 'board' (import-error)
