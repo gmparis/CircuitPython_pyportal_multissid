@@ -33,22 +33,20 @@ Usage Example
 This module implements a child class build upon Adafruit's PyPortal class.
 The class implements just one method, overriding a base method, allowing
 the PyPortal device to connect to more than one SSID. To use, invoke this
-class where you would have used the PyPortal class. For example:
+class where you would have used the PyPortal class. For example::
 
-.. highlight:: python
     from pyportal_multissid import PyPortal_MultiSSID
     pyportal = PyPortal_MultiSSID(status_neopixel=board.NEOPIXEL)
 
-Configure your "home" SSID as 'ssid' and 'password' as usual in your secrets file,
+Configure your "home" SSID as 'ssid' and 'password' as usual in your
+*secrets.py* file,
 then add any additional networks (such as phone hotspot, "MiFi" devices,
 or networks at other places you frequent) as described below.
 The PyPortal then becomes portable.
 
 The alteration of your secrets.py file is to include one extra key/value pair.
-The key is 'hotspots' and the value is a list of paris ssid and password strings.
-In the snippet below, lists are used, though tuples may be more economical.
+The key is 'hotspots' and the value is a list of pairs of ssid and password strings::
 
-.. highlight:: python
     secrets = {
         'hotspots': [
             ['myphonessid', 'thepassword'],
