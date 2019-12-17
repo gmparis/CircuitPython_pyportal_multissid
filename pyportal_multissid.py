@@ -56,8 +56,14 @@ Implementation Notes
 #}
 
 import time
-from secrets import secrets
 from adafruit_pyportal import PyPortal
+
+try:
+    from secrets import secrets
+except ImportError:
+    print("""WiFi settings are kept in secrets.py, please add them there!
+the secrets dictionary must contain 'ssid' and 'password' at a minimum""")
+    raise
 
 __version__ = "0.0.0-auto.0"
 __repo__ = "https://github.com/gmparis/CircuitPython_pyportal_multissid.git"
