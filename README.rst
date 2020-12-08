@@ -6,7 +6,7 @@ Introduction
     :alt: Documentation Status
 
 .. image:: https://img.shields.io/discord/327254708534116352.svg
-    :target: https://discord.gg/nBQh6qu
+    :target: https://adafru.it/discord
     :alt: Discord
 
 .. Unfortunately, Travis build fails because adafruit_pyportal is not in PyPi.
